@@ -1,0 +1,43 @@
+{
+  "name": "saizzler",
+  "version": "1.0.0",
+  "description": "This is my realtime resturant app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "serve": "node server.js",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiingdavies/realtime-pizza.git"
+  },
+  "author": "King Davies",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiingdavies/realtime-pizza/issues"
+  },
+  "homepage": "https://github.com/kiingdavies/realtime-pizza#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.11.11"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.9",
+    "nodemon": "^2.0.7",
+    "postcss": "^8.1.14",
+    "resolve-url-loader": "^3.1.2",
+    "sass": "^1.32.2",
+    "sass-loader": "^8.0.2"
+  },
+  "keywords": [
+    "Architecture"
+  ]
+}

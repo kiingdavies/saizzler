@@ -1,0 +1,39 @@
+body {
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #232323;
+}
+
+.rotate-45 {
+  transform: rotate(45deg);
+}
+
+.-rotate-45 {
+  transform: rotate(-45deg);
+}
+
+.btn-primary {
+  background: #4C342E;
+  transition: all 0.3s ease-in-out;
+}
+.btn-primary:hover {
+  background: #D3C4C1;
+}
+
+section.cart {
+  background: #F8F8F8;
+}
+section.cart .amount {
+  color: #4C342E;
+}
+
+section.login {
+  background: #F8F8F8;
+  min-height: calc(100vh - 86px);
+}
+section.login a {
+  color: #4C342E;
+}
+section.login a:hover {
+  color: #D3C4C1;
+}
