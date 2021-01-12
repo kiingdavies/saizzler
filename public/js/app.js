@@ -1,6 +1,37 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./resources/js/app.js":
+/*!*****************************!*\
+  !*** ./resources/js/app.js ***!
+  \*****************************/
+/***/ (() => {
+
+var burger = document.querySelector("#main-menu");
+var menu = document.querySelector("#mobile-menu");
+var closeBurger = document.querySelector("#close-menu"); // toggles hamburger menu in and out when clicking on the hamburger
+
+function toggleHamburger() {
+  if (menu.classList.contains('hidden')) {
+    menu.classList.remove('hidden');
+  } else {
+    menu.classList.add('hidden');
+  }
+} // closes the mobile menu when you click X
+
+
+function closeMenu() {
+  if (!menu.classList.contains('hidden')) {
+    menu.classList.add('hidden');
+  }
+} // EventListener to open Burger menu
+
+
+burger.addEventListener("click", toggleHamburger); // EventListener to close Burger menu
+
+closeBurger.addEventListener("click", closeMenu);
+
+/***/ }),
 
 /***/ "./resources/scss/app.scss":
 /*!*********************************!*\
@@ -8,6 +39,7 @@
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -74,6 +106,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		};
 /******/ 		
 /******/ 		var deferredModules = [
+/******/ 			["./resources/js/app.js"],
 /******/ 			["./resources/scss/app.scss"]
 /******/ 		];
 /******/ 		// no chunk on demand loading
