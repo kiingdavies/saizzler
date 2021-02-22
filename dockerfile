@@ -1,5 +1,8 @@
-FROM node:12-alpine
+FROM node:14-alpine
 WORKDIR /saizzler
-COPY . .
-RUN yarn install --production
+ENV PORT 80
+COPY package.json /saizzler/package.json
+RUN npm install
+COPY . /saizzler
+EXPOSE 8080
 CMD ["node", "server.js"]
