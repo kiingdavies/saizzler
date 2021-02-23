@@ -56,3 +56,9 @@ section.login a:hover {
 .my-float {
   margin-top: 16px;
 }
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
